@@ -16,6 +16,13 @@ export function Hero() {
 
             <div className="container mx-auto px-6 text-center relative z-10">
                 <div className="max-w-4xl mx-auto flex flex-col items-center">
+                    <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-light/20 border border-brand-dark/10 mb-10">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-dark opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-dark"></span>
+                        </span>
+                        <span className="text-sm font-semibold text-black/80 tracking-tight">Grow Your Social Media Today</span>
+                    </div>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black font-bold tracking-tight leading-[1.1] mb-8 flex flex-wrap items-center justify-center gap-x-6">
                         <span className="text-brand-dark">QR Code Standee</span>
 
@@ -28,8 +35,9 @@ export function Hero() {
                     </h1>
 
                     <p className="text-md md:text-3xl text-black/50 mb-12 font-medium tracking-tight max-w-3xl">
-                        The easiest way to grow your Google ratings and social presence.
+                        Simple for Customers, Powerful for Businesses
                         {/* <br className="hidden sm:block" /> */} {" "}
+                        <br />
                         <span className="text-brand-dark font-bold">Scan. Connect. Grow.</span>
                     </p>
                 </div>
