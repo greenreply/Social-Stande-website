@@ -6,7 +6,6 @@ import { WhyItWorks } from "./WhyItWorks";
 import { HowItWorks } from "./HowItWorks";
 import { SocialProof } from "./SocialProof";
 
-// ─── Main Export ──────────────────────────────────────────────────────────────
 export function MiddleSections() {
   return (
     <>

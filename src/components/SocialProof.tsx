@@ -40,9 +40,6 @@ export function SocialProof() {
 
             <div className="container mx-auto px-6 max-w-5xl relative z-10">
                 <div className="text-center mb-14">
-                    <p className="text-sm font-semibold tracking-widest uppercase mb-3 text-black">
-                        Real Numbers
-                    </p>
                     <h2 className="text-3xl md:text-4xl font-black text-black tracking-tight">
                         Trusted by Businesses Across India
                     </h2>

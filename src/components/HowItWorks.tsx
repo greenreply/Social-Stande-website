@@ -16,14 +16,14 @@ export function HowItWorks() {
         {
             num: "02",
             icon: Scan,
-            title: "They scan the QR code",
-            desc: "One quick scan with their phone camera — no app needed.",
+            title: "They Tap or Scan",
+            desc: "A simple tap (NFC) or a quick scan (QR). (Tip: Tap the top of your phone on the standee)",
         },
         {
             num: "03",
             icon: Star,
-            title: "They leave a review instantly",
-            desc: "They land directly on your Google review page. Simple, fast, done.",
+            title: "They leave a review",
+            desc: "They land directly on your Google review page. It's that simple.",
         },
     ];
 
@@ -84,7 +84,7 @@ export function HowItWorks() {
                         href="https://wa.me/918140961702"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-brand-dark text-black px-8 py-4 rounded-2xl font-bold text-base hover:bg-[#1e4d38] transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+                        className="inline-flex items-center gap-3 bg-brand-dark text-black px-8 py-4 rounded-2xl font-bold text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto justify-center"
                     >
                         <span>Order on WhatsApp</span>
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">

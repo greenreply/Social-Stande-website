@@ -21,7 +21,7 @@ export function ProductSection() {
                         <p className="text-lg text-black/60 mb-10 leading-relaxed font-medium">
                             <span className="font-bold text-black">Social Standee</span> is created for businesses
                             that want to make connecting effortless. Place it at your counter or event —
-                            your visitors <span className="underline decoration-brand decoration-4 underline-offset-4">scan once</span> and instantly connect.
+                            your visitors <span className="underline decoration-brand decoration-4 underline-offset-4">tap or scan once</span> and instantly connect.
                         </p>
 
                         <div className="grid grid-cols-1 gap-8 mb-12">

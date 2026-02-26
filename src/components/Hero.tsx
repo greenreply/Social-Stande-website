@@ -24,7 +24,7 @@ export function Hero() {
                         <span className="text-sm font-semibold text-black/80 tracking-tight">Grow Your Social Media Today</span>
                     </div>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black font-bold tracking-tight leading-[1.1] mb-8 flex flex-wrap items-center justify-center gap-x-6">
-                        <span className="text-brand-dark">QR Code Standee</span>
+                        <span className="text-brand-dark">Smart NFC & QR Standee</span>
 
                         <div className="relative group shrink-0">
                             <div className="absolute inset-0 bg-brand-dark/20 blur-xl rounded-full scale-75 group-hover:scale-110 transition-transform duration-500"></div>
@@ -38,7 +38,7 @@ export function Hero() {
                         Simple for Customers, Powerful for Businesses
                         {/* <br className="hidden sm:block" /> */} {" "}
                         <br />
-                        <span className="text-brand-dark font-bold">Scan. Connect. Grow.</span>
+                        <span className="text-brand-dark font-bold">Tap. Scan. Grow.</span>
                     </p>
                 </div>
             </div>

@@ -71,8 +71,8 @@ export function ProductShowcase() {
                                 Social Standee makes it simple.
                             </p>
                             <p>
-                                Customers just scan the QR code and directly land on your Google
-                                review page. No typing. No searching. No confusion.
+                                Customers just tap their phone or scan the QR code to land directly on your Google
+                                review page. It works just like a contactless payment — zero friction, zero confusion.
                             </p>
                             <p>
                                 It increases reviews naturally. More reviews build more trust.

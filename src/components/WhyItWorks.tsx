@@ -76,14 +76,14 @@ export function WhyItWorks() {
                                     <span className="text-brand-dark">Endless Reviews.</span>
                                 </p>
                                 <p className="text-gray-500 text-base md:text-lg leading-relaxed max-w-lg">
-                                    Place it on your counter once. Every customer who scans it goes
+                                    Place it on your counter once. Every customer who taps or scans it goes
                                     straight to your Google review page — no friction, no confusion.
                                 </p>
 
                                 {/* Mini stat row */}
                                 <div className="flex flex-wrap justify-center md:justify-start gap-6 mt-6 pt-6 border-t border-[#2d6a4f]/10">
                                     {[
-                                        { num: "3s", label: "to leave a review" },
+                                        { num: "3sec", label: "to leave a review" },
                                         { num: "0", label: "apps needed" },
                                         { num: "100%", label: "Google verified" },
                                     ].map(({ num, label }) => (
