@@ -1,39 +1,74 @@
-import { Instagram, Facebook, Youtube, Linkedin, MessageCircle, QrCode } from "lucide-react";
-import { Lottie } from "./Lottie";
+import { Instagram, Facebook, Youtube, Linkedin, MessageCircle, QrCode, Wifi, ArrowRight } from "lucide-react";
+import { Button } from "./Button";
 
 export function Hero() {
     const icons = [
-        { Icon: QrCode, className: "top-[10%] left-[5%] animate-float-slow text-brand-dark/10" },
-        { Icon: MessageCircle, className: "top-[20%] right-[8%] animate-float text-brand-dark/10" }, // WhatsApp
-        { Icon: Instagram, className: "bottom-[15%] left-[8%] animate-float-delayed text-brand-dark/10" },
-        { Icon: Facebook, className: "top-[45%] right-[5%] animate-float-slow text-brand-dark/10" },
-        { Icon: Youtube, className: "bottom-[25%] right-[12%] animate-float text-brand-dark/10" },
-        { Icon: Linkedin, className: "top-[25%] left-[15%] animate-float-delayed text-brand-dark/10" },
+        { Icon: QrCode, className: "top-[15%] left-[10%] animate-float-slow text-brand-dark/20" },
+        { Icon: Wifi, className: "top-[25%] right-[12%] animate-float text-white/20" },
+        { Icon: Instagram, className: "bottom-[20%] left-[15%] animate-float-delayed text-brand-dark/20" },
+        { Icon: Facebook, className: "top-[50%] right-[8%] animate-float-slow text-white/10" },
+        { Icon: Youtube, className: "bottom-[30%] right-[15%] animate-float text-brand-dark/10" },
+        { Icon: Linkedin, className: "top-[40%] left-[5%] animate-float-delayed text-white/10" },
     ];
 
     return (
-        <section className="relative min-h-screen flex items-center justify-center bg-white overflow-hidden pt-20">
+        <section id="home" className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden md:pt-28">
+            {/* Grid Background with Side Masking - Subtle Yellow */}
+            <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#facc1515_1px,transparent_1px),linear-gradient(to_bottom,#facc1515_1px,transparent_1px)] bg-[size:30px_30px] md:bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_90%_90%_at_50%_50%,#000_60%,transparent_100%)] md:[mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]" />
+
+            {/* Background Glow Effects */}
+            <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-brand-dark/10 blur-[120px] rounded-full pointer-events-none animate-pulse" />
+            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-white/5 blur-[100px] rounded-full pointer-events-none animate-float-slow" />
+
+            {/* Floating Decorative Icons */}
+            {icons.map(({ Icon, className }, index) => (
+                <div key={index} className={`absolute pointer-events-none hidden md:block ${className}`}>
+                    <Icon className="w-12 h-12" />
+                </div>
+            ))}
 
             <div className="container mx-auto px-6 text-center relative z-10">
-                <div className="max-w-4xl mx-auto flex flex-col items-center">
-                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black font-bold tracking-tight leading-[1.1] mb-8 flex flex-wrap items-center justify-center gap-x-6">
-                        <span className="text-brand-dark">QR Code Standee</span>
+                <div className="max-w-5xl mx-auto flex flex-col items-center">
 
-                        <div className="relative group shrink-0">
-                            <div className="absolute inset-0 bg-brand-dark/20 blur-xl rounded-full scale-75 group-hover:scale-110 transition-transform duration-500"></div>
-                            {/* <Lottie height={120} width={120} className="relative z-10 w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-36 lg:h-36" /> */}
-                        </div>
+                    {/* Glassmorphism Badge */}
+                    <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-10 group hover:border-brand-dark/50 transition-colors duration-300">
+                        <span className="relative flex h-2 w-2">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-dark opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-2 w-2 bg-brand-dark"></span>
+                        </span>
+                        <span className="text-sm font-medium text-white/90 tracking-wide uppercase">
+                            Grow Your Business Today
+                        </span>
+                    </div>
 
+                    {/* Main Heading - Limited to 7xl */}
+                    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-[1.1] mb-8 text-white">
+                        <span className="text-brand-dark">Smart NFC & QR Standee</span><br className="" />
                         <span>for Business Growth</span>
                     </h1>
 
-                    <p className="text-md md:text-3xl text-black/50 mb-12 font-medium tracking-tight max-w-3xl">
-                        The easiest way to grow your Google ratings and social presence.
-                        {/* <br className="hidden sm:block" /> */} {" "}
+                    {/* Description - Restored Original Content */}
+                    <p className="text-lg md:text-2xl text-white mb-12 font-medium tracking-tight max-w-2xl leading-relaxed">
+                        Simple for Customers, Powerful for Businesses
+                        <br />
                         <span className="text-brand-dark font-bold">Scan. Connect. Grow.</span>
                     </p>
+
+                    {/* CTA Buttons */}
+                    <div className="flex flex-col sm:flex-row gap-5 items-center">
+                        <Button
+                            href="https://wa.me/918140961702"
+                            showChevron
+                        >
+                            Get Started Now
+                        </Button>
+                    </div>
+
                 </div>
             </div>
+
+            {/* Bottom Gradient Overlay */}
+            <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-black to-transparent z-0" />
         </section>
     );
 }

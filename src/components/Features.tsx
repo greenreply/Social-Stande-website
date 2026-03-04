@@ -53,7 +53,7 @@ export function Features() {
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <Smartphone className="h-6 w-6 text-blue-300" />
-                                    <span className="text-lg">High-Grade NFC Chip Embedded</span>
+                                    <span className="text-lg">Magic Tap: Just tap to connect instantly</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <Scan className="h-6 w-6 text-blue-300" />

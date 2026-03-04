@@ -3,7 +3,7 @@ import { QrCode, Smartphone, Users, MapPin } from "lucide-react";
 
 export function ProductSection() {
     return (
-        <section className="py-24 bg-white relative overflow-hidden">
+        <section className="py-24 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
@@ -21,7 +21,7 @@ export function ProductSection() {
                         <p className="text-lg text-black/60 mb-10 leading-relaxed font-medium">
                             <span className="font-bold text-black">Social Standee</span> is created for businesses
                             that want to make connecting effortless. Place it at your counter or event —
-                            your visitors <span className="underline decoration-brand decoration-4 underline-offset-4">scan once</span> and instantly connect.
+                            your visitors <span className="underline decoration-brand decoration-4 underline-offset-4">tap or scan once</span> and instantly connect.
                         </p>
 
                         <div className="grid grid-cols-1 gap-8 mb-12">
