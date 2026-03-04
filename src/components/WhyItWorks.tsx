@@ -54,10 +54,8 @@ export function WhyItWorks() {
                         ))}
                     </div>
 
-                    {/* Our Solution — dark card */}
                     <div className="relative rounded-3xl p-8 md:p-12 overflow-hidden border border-white/10 bg-gray-950">
 
-                        {/* Glow */}
                         <div className="absolute -top-16 -right-16 w-56 h-56 rounded-full bg-brand-dark/10 blur-3xl pointer-events-none" />
 
                         <div className="relative z-10 flex flex-col md:flex-row items-center md:items-start gap-8 text-left">
@@ -75,7 +73,7 @@ export function WhyItWorks() {
                                 </p>
                                 <p className="text-white/50 text-base md:text-lg leading-relaxed max-w-lg">
                                     Place it on your counter once. Every customer who taps or scans it goes
-                                    straight to your Google review page — no friction, no confusion.
+                                    straight to your Google review page no friction, no confusion.
                                 </p>
 
                                 {/* Mini stat row */}
