@@ -1,7 +1,7 @@
 "use client";
 
 import { useInView } from "@/hooks/useInView";
-import { MapPin, Scan, Star } from "lucide-react";
+import { MapPin, QrCode, Star } from "lucide-react";
 
 export function HowItWorks() {
     const { ref, inView } = useInView(0.1);
@@ -15,7 +15,7 @@ export function HowItWorks() {
         },
         {
             num: "02",
-            icon: Scan,
+            icon: QrCode,
             title: "They Tap or Scan",
             desc: "A simple tap (NFC) or a quick scan (QR). (Tip: Tap the top of your phone on the standee)",
         },
@@ -28,7 +28,7 @@ export function HowItWorks() {
     ];
 
     return (
-        <section className="py-20 md:py-28 bg-gray-50 overflow-hidden">
+        <section className="py-10 md:py-14 bg-white overflow-hidden">
             <div className="container mx-auto px-6 max-w-6xl">
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#2d6a4f]/10 border border-[#2d6a4f]/20 mb-6">
@@ -84,7 +84,7 @@ export function HowItWorks() {
                         href="https://wa.me/918140961702"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-3 bg-brand-dark text-black px-8 py-4 rounded-2xl font-bold text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto justify-center"
+                        className="inline-flex items-center gap-3 bg-brand-dark text-black group-hover:bg-white group-hover:text-brand-dark group-hover:border-brand-dark px-8 py-4 rounded-2xl font-bold text-base transition-all duration-200 shadow-lg hover:shadow-xl hover:-translate-y-0.5 w-full sm:w-auto justify-center"
                     >
                         <span>Order on WhatsApp</span>
                         <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 16 16">
