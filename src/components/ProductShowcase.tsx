@@ -8,7 +8,7 @@ export function ProductShowcase() {
     const { ref, inView } = useInView(0.1);
 
     return (
-        <section className="py-20 md:py-28 bg-white overflow-hidden">
+        <section id="features" className="py-20 md:py-28 bg-white overflow-hidden">
             <div className="container mx-auto px-6 max-w-6xl">
                 <div
                     ref={ref}
@@ -72,13 +72,13 @@ export function ProductShowcase() {
                             </p>
                             <p>
                                 Customers just tap their phone or scan the QR code to land directly on your Google
-                                review page. It works just like a contactless payment — zero friction, zero confusion.
+                                review page. It works just like a contactless payment zero friction, zero confusion.
                             </p>
                             <p>
                                 It increases reviews naturally. More reviews build more trust.
                                 More trust brings more customers.
                             </p>
-                            <p className="font-semibold text-[#2d6a4f]">
+                            <p className="font-semibold text-brand-dark">
                                 All from your counter.
                             </p>
                         </div>

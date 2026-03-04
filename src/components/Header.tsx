@@ -2,132 +2,162 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState, useRef } from "react";
+import { Menu, X } from "lucide-react";
+import { Button } from "./Button";
 
 export function Header() {
-    const [visible, setVisible] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
+    const [visible, setVisible] = useState(true);
     const lastScrollY = useRef(0);
-    const ticking = useRef(false);
-    const hideTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    const navLinks = [
+        { name: "Home", href: "#home" },
+        { name: "Features", href: "#features" },
+        { name: "How it Works", href: "#how-it-works" },
+        { name: "Reviews", href: "#reviews" },
+    ];
 
     useEffect(() => {
-        const getHeroHeight = () => window.innerHeight;
-
         const handleScroll = () => {
-            if (ticking.current) return;
-            ticking.current = true;
-
-            requestAnimationFrame(() => {
-                const currentY = window.scrollY;
-                const delta = currentY - lastScrollY.current;
-                const HERO = getHeroHeight();
-
-                setScrolled(currentY > 10);
-
-                if (currentY < HERO) {
-                    // Inside hero — always show
-                    setVisible(true);
-                    if (hideTimer.current) clearTimeout(hideTimer.current);
-                } else if (delta > 2) {
-                    // Past hero, scrolling DOWN → hide
-                    setVisible(false);
-                    if (hideTimer.current) clearTimeout(hideTimer.current);
-                } else if (delta < -8) {
-                    // Scrolling UP anywhere → show, then auto-hide after 3s
-                    setVisible(true);
-                    if (hideTimer.current) clearTimeout(hideTimer.current);
-                    hideTimer.current = setTimeout(() => {
-                        setVisible(false);
-                    }, 3000);
-                }
-
-                lastScrollY.current = currentY;
-                ticking.current = false;
-            });
-        };
-
-        // Click anywhere (outside header) also brings it back
-        const handleClick = (e: MouseEvent) => {
-            const currentY = window.scrollY;
-            if (currentY < getHeroHeight()) return;
-            if ((e.target as HTMLElement)?.closest("header")) return;
-
-            setVisible(true);
-            if (hideTimer.current) clearTimeout(hideTimer.current);
-            hideTimer.current = setTimeout(() => {
+            const currentScrollY = window.scrollY;
+            setScrolled(currentScrollY > 20);
+            if (currentScrollY > lastScrollY.current && currentScrollY > 100) {
                 setVisible(false);
-            }, 4000);
+            } else {
+                setVisible(true);
+            }
+            lastScrollY.current = currentScrollY;
         };
 
         window.addEventListener("scroll", handleScroll, { passive: true });
-        window.addEventListener("click", handleClick);
-
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-            window.removeEventListener("click", handleClick);
-            if (hideTimer.current) clearTimeout(hideTimer.current);
-        };
+        return () => window.removeEventListener("scroll", handleScroll);
     }, []);
 
+    // Prevent body scroll when menu is open
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
+        return () => { document.body.style.overflow = ""; };
+    }, [isOpen]);
+
     return (
-        <header
-            style={{
-                position: "fixed",
-                top: "1rem",
-                left: "50%",
-                transform: `translateX(-50%) translateY(${visible ? "0" : "-160%"})`,
-                transition: "transform 0.5s cubic-bezier(0.34, 1.2, 0.64, 1), box-shadow 0.3s ease",
-                zIndex: 9999,
-                width: "min(660px, calc(100vw - 2rem))",
-                borderRadius: "9999px",
-                background: "#ffffff",
-                border: scrolled
-                    ? "1.5px solid rgba(0,0,0,0.08)"
-                    : "1.5px solid rgba(0,0,0,0.06)",
-                boxShadow: scrolled
-                    ? "0 8px 30px rgba(0,0,0,0.13), 0 2px 8px rgba(0,0,0,0.07)"
-                    : "0 4px 20px rgba(0,0,0,0.08)",
-            }}
-            aria-label="Site header"
-        >
-            <div
-                style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: "0.5rem 2rem",
-                    height: "4.25rem",
-                }}
+        <>
+            <header
+                className={`fixed top-0 left-0 w-full z-[10000] transition-all duration-300 transform ${visible ? "translate-y-0" : "-translate-y-full"
+                    } ${scrolled ? "backdrop-blur-md border-b border-white/10 py-2 md:py-4" : "py-3 md:py-6"}`}
+                style={{ backgroundColor: '#000000' }}
             >
-                <Link
-                    href="/"
-                    style={{
-                        position: "relative",
-                        display: "flex",
-                        alignItems: "center",
-                        textDecoration: "none",
-                        transition: "transform 0.2s ease",
-                    }}
-                    onMouseEnter={(e) =>
-                        ((e.currentTarget as HTMLElement).style.transform = "scale(1.05)")
-                    }
-                    onMouseLeave={(e) =>
-                        ((e.currentTarget as HTMLElement).style.transform = "scale(1)")
-                    }
-                    aria-label="Social Standee – home"
+                {/* Subtle Background Grid */}
+                <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none" />
+
+                <div className="container mx-auto px-6 md:px-8 h-full relative z-10">
+                    <div className="flex items-center justify-between md:justify-center relative h-full md:gap-16 lg:gap-24">
+
+                        <nav className="hidden md:flex items-center gap-10 lg:gap-14">
+                            {navLinks.slice(0, 2).map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-[14px] font-semibold text-white hover:text-brand-dark transition-all duration-300 tracking-widest uppercase"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </nav>
+
+                        <div className="relative z-10">
+                            <Link href="/" className="flex items-center group">
+                                <div className={`relative transition-all duration-500 group-hover:scale-105 ${scrolled ? "w-32 md:w-40 h-11" : "w-40 md:w-56 h-11 md:h-12"
+                                    }`}>
+                                    <Image
+                                        src="/assets/Dark SVG.svg"
+                                        alt="Social Standee Logo"
+                                        fill
+                                        className="object-contain"
+                                        priority
+                                    />
+                                </div>
+                            </Link>
+                        </div>
+
+                        <nav className="hidden md:flex items-center gap-10 lg:gap-14">
+                            {navLinks.slice(2).map((link) => (
+                                <Link
+                                    key={link.name}
+                                    href={link.href}
+                                    className="text-[14px] font-semibold text-white hover:text-brand-dark transition-all duration-300 tracking-widest uppercase"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
+                        </nav>
+
+                        <div className="flex md:hidden items-center justify-end">
+                            <button
+                                onClick={() => setIsOpen(!isOpen)}
+                                className="p-3 text-brand-dark rounded-2xl transition-all duration-300"
+                                aria-label="Toggle menu"
+                            >
+                                {isOpen ? <X size={32} /> : <Menu size={32} />}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            {/* Mobile Menu Backdrop */}
+            <div
+                className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[99998] md:hidden transition-opacity duration-500 ${isOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+                onClick={() => setIsOpen(false)}
+            />
+
+            {/* Mobile Menu Drawer */}
+            <div
+                className={`fixed top-0 right-0 h-full w-[75%] max-w-sm z-[99999] md:hidden transition-transform duration-500 ease-in-out ${isOpen ? "translate-x-0" : "translate-x-full"
+                    }`}
+                style={{ backgroundColor: '#0a0a0a' }}
+            >
+                {/* Menu Header */}
+                <div
+                    className="flex items-center justify-between px-8 py-7 border-b border-white/5"
+                    style={{ backgroundColor: '#0a0a0a' }}
                 >
-                    <div style={{ position: "relative", width: "195px", height: "50px" }}>
+                    <div className="relative w-32 h-10">
                         <Image
-                            src="/assets/Logo.png"
+                            src="/assets/Dark SVG.svg"
                             alt="Social Standee Logo"
                             fill
-                            style={{ objectFit: "contain" }}
-                            priority
+                            className="object-contain"
                         />
                     </div>
-                </Link>
+                    <button
+                        onClick={() => setIsOpen(false)}
+                        className="p-2 text-brand-dark rounded-xl transition-all duration-300"
+                        aria-label="Close menu"
+                    >
+                        <X size={28} />
+                    </button>
+                </div>
+
+                {/* Nav Links */}
+                <nav className="flex flex-col gap-2 p-6">
+                    {navLinks.map((link) => (
+                        <Link
+                            key={link.name}
+                            href={link.href}
+                            className="w-full py-4 px-4 text-base font-bold text-white/70 hover:text-brand-dark transition-all duration-300 tracking-[0.1em] uppercase border-b border-white/5 last:border-0"
+                            onClick={() => setIsOpen(false)}
+                        >
+                            {link.name}
+                        </Link>
+                    ))}
+                </nav>
             </div>
-        </header>
+        </>
     );
 }

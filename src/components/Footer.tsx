@@ -1,9 +1,22 @@
 import { Instagram, MessageCircle, Mail, Phone } from "lucide-react";
+import Image from "next/image";
 
 export function Footer() {
     return (
         <footer className="bg-white py-12 border-t border-slate-50">
             <div className="container mx-auto px-6 text-center">
+                {/* Logo */}
+                <div className="flex justify-center mb-10">
+                    <div className="relative w-48 h-14">
+                        <Image
+                            src="/assets/Light SVG (1).svg"
+                            alt="Social Standee Logo"
+                            fill
+                            className="object-contain"
+                        />
+                    </div>
+                </div>
+
                 <div className="flex justify-center gap-8 mb-10">
                     <a href="https://wa.me/918140961702" target="_blank" rel="noopener noreferrer" className="p-3 rounded-full bg-slate-100 text-black/30 hover:text-brand-dark transition-all flex items-center justify-center group/wa">
                         <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
