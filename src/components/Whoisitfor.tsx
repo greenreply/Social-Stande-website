@@ -8,7 +8,7 @@ const PROFILES = [
     title: "Restaurants & Cafes",
     subtitle: "Turn every meal into a 5-star review",
     description:
-      "Your food speaks for itself — now let customers say it online. Place the standee on every table and watch reviews pour in while they're still enjoying their meal.",
+      "Your food speaks for itself now let customers say it online. Place the standee on every table and watch reviews pour in while they're still enjoying their meal.",
     tags: ["Dine-in", "Takeaway", "Cloud Kitchen"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
@@ -24,7 +24,7 @@ const PROFILES = [
     title: "Retail Stores",
     subtitle: "Convert footfall into online trust",
     description:
-      "Every customer who walks out happy is a potential reviewer. The standee near the billing counter makes it effortless — one tap, and they've left your review.",
+      "Every customer who walks out happy is a potential reviewer. The standee near the billing counter makes it effortless one tap, and they've left your review.",
     tags: ["Clothing", "Electronics", "General Store"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
@@ -56,7 +56,7 @@ const PROFILES = [
     title: "Clinics & Doctors",
     subtitle: "Build trust before they even walk in",
     description:
-      "New patients check reviews before booking. A standee in your waiting room lets satisfied patients share their experience with one tap — no app, no friction.",
+      "New patients check reviews before booking. A standee in your waiting room lets satisfied patients share their experience with one tap no app, no friction.",
     tags: ["General Physician", "Dental Clinic", "Eye Care"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
@@ -71,7 +71,7 @@ const PROFILES = [
     title: "Hotels & Stays",
     subtitle: "More stars online, more bookings offline",
     description:
-      "Guests decide where to stay based on reviews. Place the standee at checkout or in the lobby — happy guests become your best marketing, effortlessly.",
+      "Guests decide where to stay based on reviews. Place the standee at checkout or in the lobby happy guests become your best marketing, effortlessly.",
     tags: ["Hotel", "Homestay", "Guest House"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
@@ -87,7 +87,7 @@ const PROFILES = [
     title: "Service Professionals",
     subtitle: "Your reputation is your business card",
     description:
-      "Electricians, plumbers, CA firms, agencies — if you do great work, your clients should say so. The standee or NFC tap at job completion captures it instantly.",
+      "Electricians, plumbers, CA firms, agencies if you do great work, your clients should say so. The standee or NFC tap at job completion captures it instantly.",
     tags: ["Electrician", "CA / Consultant", "Agency"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
@@ -123,7 +123,7 @@ export function WhoIsItFor() {
 
           <p className="text-base text-white/50 leading-relaxed max-w-md">
             Social Standee works for any business that serves customers in person.
-            If people visit you, they can review you — instantly.
+            If people visit you, they can review you instantly.
           </p>
         </div>
 

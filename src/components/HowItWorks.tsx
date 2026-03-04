@@ -47,7 +47,6 @@ export function HowItWorks() {
                     ref={ref}
                     className={`relative transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
                 >
-                    {/* Desktop connector line */}
                     <div className="hidden md:block absolute top-12 left-[16%] right-[16%] h-0.5 bg-gradient-to-r from-gray-200 via-[#2d6a4f]/40 to-gray-200" />
 
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
@@ -58,10 +57,10 @@ export function HowItWorks() {
                                 style={{ transitionDelay: `${i * 150}ms` }}
                             >
                                 <div className="relative mb-6">
-                                    <div className="w-24 h-24 rounded-full bg-white border-2 border-[#2d6a4f]/20 flex items-center justify-center shadow-md group-hover:border-[#2d6a4f] group-hover:shadow-lg transition-all duration-200">
-                                        <Icon className="w-9 h-9 text-[#2d6a4f]" />
+                                    <div className="w-24 h-24 rounded-full bg-white border-2 border-black/10 flex items-center justify-center shadow-md group-hover:border-brand-dark group-hover:shadow-lg transition-all duration-200">
+                                        <Icon className="w-9 h-9 text-black" />
                                     </div>
-                                    <div className="absolute -top-2 -right-2 w-7 h-7 rounded-full bg-brand-dark flex items-center justify-center shadow-sm">
+                                    <div className="absolute -top-2 right-0 w-7 h-7 rounded-full bg-brand-dark flex items-center justify-center shadow-sm">
                                         <span className="text-[10px] font-black text-white">
                                             {num}
                                         </span>
@@ -79,7 +78,6 @@ export function HowItWorks() {
                     </div>
                 </div>
 
-                {/* Bottom CTA */}
                 <div className="text-center mt-14">
                     <Button
                         href="https://wa.me/918140961702"

@@ -30,8 +30,8 @@ export function Button({
     const baseStyles = "inline-flex items-center justify-center gap-2 px-10 py-5 rounded-2xl font-black text-lg transition-all duration-300 shadow-lg focus:outline-none focus:ring-2 focus:ring-brand-dark/50 active:scale-[0.98]";
 
     const variants = {
-        primary: "bg-brand-dark text-black shadow-[0_0_30px_rgba(250,204,21,0.3)] hover:shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:-translate-y-0.5",
-        secondary: "bg-white text-black border border-slate-200 hover:bg-slate-50",
+        primary: "bg-brand-dark text-black/90 shadow-[0_0_30px_rgba(250,204,21,0.3)] hover:shadow-[0_0_40px_rgba(250,204,21,0.4)] hover:-translate-y-0.5",
+        secondary: "bg-white text-black/90 border border-slate-200 hover:bg-slate-50",
         outline: "bg-transparent text-white border-2 border-white/20 hover:bg-white/5 hover:border-white/40",
     };
 
