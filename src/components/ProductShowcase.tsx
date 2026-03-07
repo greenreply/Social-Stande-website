@@ -1,22 +1,14 @@
-"use client";
-
-import { useInView } from "@/hooks/useInView";
 import { Star } from "lucide-react";
 import Image from "next/image";
 
 export function ProductShowcase() {
-    const { ref, inView } = useInView(0.1);
-
     return (
-        <section id="features" className="py-20 md:py-28 bg-white overflow-hidden">
-            <div className="container mx-auto px-6 max-w-6xl">
-                <div
-                    ref={ref}
-                    className={`grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                >
+        <section id="features" className="py-16 md:py-20 bg-white overflow-hidden">
+            <div className="container mx-auto px-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
                     {/* Left: Visual Mockups */}
                     <div className="relative flex items-center justify-center order-1 md:order-1">
-                        <div className="relative w-full max-w-sm mx-auto">
+                        <div className="relative w-full max-w-[400px] mx-auto">
                             <div className="absolute inset-0 bg-gradient-to-br from-[#c8f0d8]/60 to-[#a8e6c0]/30 rounded-3xl blur-3xl scale-110" />
 
                             <div className="relative rounded-2xl border-2 border-[#2d6a4f]/20 overflow-hidden shadow-xl bg-transparent">
@@ -82,6 +74,7 @@ export function ProductShowcase() {
                                 All from your counter.
                             </p>
                         </div>
+
                     </div>
                 </div>
             </div>

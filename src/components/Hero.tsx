@@ -25,7 +25,7 @@ export function Hero() {
             ))}
 
             <div className="container mx-auto px-6 text-center relative z-10">
-                <div className="max-w-5xl mx-auto flex flex-col items-center">
+                <div className="flex flex-col items-center">
 
                     <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full bg-white/5 border border-white/10 backdrop-blur-md mb-10 group hover:border-brand-dark/50 transition-colors duration-300">
                         <span className="relative flex h-2 w-2">
@@ -42,7 +42,7 @@ export function Hero() {
                         <span>for Business Growth</span>
                     </h1>
 
-                    <p className="text-lg md:text-2xl text-white mb-12 font-medium tracking-tight max-w-2xl leading-relaxed">
+                    <p className="text-lg md:text-2xl text-white mb-12 font-medium tracking-tight leading-relaxed">
                         Simple for Customers, Powerful for Businesses
                         <br />
                         <span className="text-brand-dark font-bold">Scan. Connect. Grow.</span>

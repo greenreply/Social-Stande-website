@@ -16,9 +16,24 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Social Standee - Grow Your Social Media & Reviews with 1 Tap",
-  description: "Boost your Instagram followers and Google reviews instantly. Social Standee uses NFC chip and QR code technology to connect customers to your business pages seamlessly. No app required.",
-  keywords: ["social standee", "nfc standee", "google reviews nfc", "instagram followers card", "qr code standee", "smart business card", "contactless marketing"],
+  openGraph: {
+    title: "Social Standee – NFC & QR Standee for Google Reviews | India",
+    description:
+      "Social Standee helps Indian businesses get more Google Reviews instantly using NFC & QR technology. No app needed. Tap, scan, and collect reviews in 3 seconds.",
+    url: "https://socialstandee.com",
+    siteName: "Social Standee",
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630 }],
+    locale: "en_IN",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://socialstandee.com",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
 };
 
 export default function RootLayout({
@@ -27,12 +42,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+    <html lang="en-IN">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <Header />
-        <main className="min-h-screen bg-grid">
-          {children}
-        </main>
+        <main className="min-h-screen bg-grid">{children}</main>
         <Footer />
         <WhatsAppButton />
       </body>

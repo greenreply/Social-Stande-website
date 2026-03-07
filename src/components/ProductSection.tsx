@@ -3,7 +3,7 @@ import { QrCode, Smartphone, Users, MapPin } from "lucide-react";
 
 export function ProductSection() {
     return (
-        <section className="py-24 relative overflow-hidden">
+        <section className="py-16 md:py-20 relative overflow-hidden">
             <div className="container mx-auto px-6 relative z-10">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 

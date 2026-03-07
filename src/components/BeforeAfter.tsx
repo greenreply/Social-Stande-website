@@ -1,15 +1,11 @@
-"use client";
-
-import { useInView } from "@/hooks/useInView";
 import { Stars } from "./Stars";
 import { ArrowUp, Star } from "lucide-react";
+import { Button } from "./Button";
 
 export function BeforeAfter() {
-    const { ref, inView } = useInView(0.1);
-
     return (
-        <section className="py-20 md:py-28 bg-gray-50 overflow-hidden">
-            <div className="container mx-auto px-6 max-w-6xl">
+        <section className="py-16 md:py-20 bg-gray-50 overflow-hidden">
+            <div className="container mx-auto px-6">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-black text-gray-900 tracking-tight">
                         The Difference Is Clear
@@ -19,10 +15,7 @@ export function BeforeAfter() {
                     </p>
                 </div>
 
-                <div
-                    ref={ref}
-                    className={`grid grid-cols-1 md:grid-cols-2 gap-6 transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                >
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {/* BEFORE */}
                     <div className="relative bg-white rounded-3xl p-8 border border-gray-200 overflow-hidden">
                         <div className="absolute inset-0 bg-gradient-to-br from-gray-50 to-gray-100/50" />
@@ -104,7 +97,7 @@ export function BeforeAfter() {
                                         </p>
                                         <div className="flex items-center gap-1.5">
                                             <p className="text-xs text-gray-500">120+ reviews</p>
-                                            <span className="inline-flex items-center gap-0.5 text-[10px] text-green-600 font-bold">
+                                            <span className="inline-flex items-center gap-0.5 text-green-600 font-bold">
                                                 <ArrowUp className="w-2.5 h-2.5 animate-bounce" />{" "}
                                                 Growing
                                             </span>
@@ -122,7 +115,7 @@ export function BeforeAfter() {
                                 </div>
                             </div>
 
-                            <ul className="space-y-3">
+                            <ul className="space-y-3 mb-8">
                                 {[
                                     "More 5-star reviews",
                                     "Higher customer trust",
@@ -140,6 +133,10 @@ export function BeforeAfter() {
                                     </li>
                                 ))}
                             </ul>
+
+                            <Button href="https://wa.me/918140961702" showChevron className="w-full justify-center">
+                                Get This For My Business
+                            </Button>
                         </div>
                     </div>
                 </div>

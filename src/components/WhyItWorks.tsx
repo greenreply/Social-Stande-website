@@ -1,11 +1,6 @@
-"use client";
-
-import { useInView } from "@/hooks/useInView";
 import { MessageSquare, MapPin, Zap, Star } from "lucide-react";
 
 export function WhyItWorks() {
-    const { ref, inView } = useInView(0.1);
-
     const reasons = [
         {
             icon: Zap,
@@ -25,17 +20,14 @@ export function WhyItWorks() {
     ];
 
     return (
-        <section className="py-10 md:py-14 bg-white overflow-hidden">
-            <div className="container mx-auto px-6 max-w-4xl">
-                <div
-                    ref={ref}
-                    className={`text-center transition-all duration-700 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
-                >
+        <section className="py-16 md:py-20 bg-white overflow-hidden">
+            <div className="container mx-auto px-6">
+                <div className="text-center">
                     <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-gray-900 tracking-tight mb-4">
                         Why It Works
                     </h2>
 
-                    <p className="text-gray-500 text-lg mb-16 max-w-xl mx-auto">
+                    <p className="text-gray-500 text-lg mb-16 mx-auto">
                         People don't leave reviews because of friction. We remove it.
                     </p>
 
@@ -71,7 +63,7 @@ export function WhyItWorks() {
                                     One Standee.{" "}
                                     <span className="text-brand-dark">Endless Reviews.</span>
                                 </p>
-                                <p className="text-white/50 text-base md:text-lg leading-relaxed max-w-lg">
+                                <p className="text-white/50 text-base md:text-lg leading-relaxed">
                                     Place it on your counter once. Every customer who taps or scans it goes
                                     straight to your Google review page no friction, no confusion.
                                 </p>

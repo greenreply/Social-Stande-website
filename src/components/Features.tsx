@@ -2,13 +2,13 @@ import { Scan, Wifi, ShieldCheck, Zap, Layers, Smartphone } from "lucide-react";
 
 export function Features() {
     return (
-        <section className="py-24 bg-gray-50">
-            <div className="container mx-auto px-4">
+        <section className="py-16 md:py-20 bg-gray-50">
+            <div className="container mx-auto px-6">
 
                 {/* How it works */}
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-[#253A4E] mb-6">How It Works</h2>
-                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                    <p className="text-lg text-gray-600 mx-auto">
                         Social Standee creates a seamless bridge between your offline store and online presence.
                     </p>
                 </div>
