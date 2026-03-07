@@ -16,9 +16,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Social Standee - Grow Your Social Media & Reviews with 1 Tap",
-  description: "Boost your Instagram followers and Google reviews instantly. Social Standee uses NFC chip and QR code technology to connect customers to your business pages seamlessly. No app required.",
-  keywords: ["social standee", "nfc standee", "google reviews nfc", "instagram followers card", "qr code standee", "smart business card", "contactless marketing"],
+  title: "Social Standee | NFC & QR Google Review Standee for Businesses",
+  description: "Increase Google reviews instantly with NFC and QR review standees designed for restaurants, salons, clinics, and retail shops.",
+  keywords: [
+    "Google Review Standee",
+    "NFC Review Standee",
+    "QR Code Review Standee",
+    "Get More Google Reviews",
+    "Increase Google Reviews for Business",
+    "Social Standee",
+    "Contactless Reviews"
+  ],
 };
 
 export default function RootLayout({

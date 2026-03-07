@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Linkedin, MessageCircle, QrCode, Wifi, ArrowRight } from "lucide-react";
+import { Instagram, Facebook, Youtube, Linkedin, QrCode, Wifi } from "lucide-react";
 import { Button } from "./Button";
 
 export function Hero() {

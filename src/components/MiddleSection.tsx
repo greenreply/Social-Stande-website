@@ -1,4 +1,3 @@
-"use client";
 
 import { ProductShowcase } from "./ProductShowcase";
 import { BeforeAfter } from "./BeforeAfter";

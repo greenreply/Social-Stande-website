@@ -2,16 +2,27 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand: #FFCB2D;
-  --color-brand-light: #FFE082;
-  --color-brand-dark: #FACC3B;
-  --color-brand-contrast: #000000;
+  --color-brand: #FAD957;
+  --color-brand-light: #FCE68E;
+  --color-brand-dark: #E5C33E;
+  --color-brand-contrast: #161616;
+
+  /* Overriding defaults for "everywhere" application */
+  --color-yellow-400: #FAD957;
+  --color-yellow-500: #E5C33E;
+  --color-yellow-600: #CCAD36;
+
+  --color-black: #161616;
+  --color-zinc-950: #161616;
+  --color-zinc-900: #1f1f1f;
+  /* Slightly lighter for contrast if needed, or just use 161616 */
+
   --font-sans: "Poppins", var(--font-geist-sans);
 }
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #161616;
+  --foreground: #ffffff;
 }
 
 body {
