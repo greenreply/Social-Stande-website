@@ -48,7 +48,7 @@ export function IndustryUseCases() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-                        Perfect for <span className="text-yellow-400">Every Business</span>
+                        Perfect for <span className="text-brand-dark">Every Business</span>
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Social Standee is designed to fit seamlessly into your workspace, no matter what you do.
@@ -60,16 +60,16 @@ export function IndustryUseCases() {
                         <Link
                             key={index}
                             href={industry.link}
-                            className="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-yellow-400/30 transition-all flex flex-col items-start"
+                            className="group p-8 rounded-3xl bg-white/5 border border-white/10 hover:bg-white/10 hover:border-brand-dark/30 transition-all flex flex-col items-start"
                         >
-                            <div className="mb-6 w-14 h-14 rounded-2xl bg-yellow-400/10 text-yellow-400 flex items-center justify-center group-hover:bg-yellow-400 group-hover:text-black transition-all">
+                            <div className="mb-6 w-14 h-14 rounded-2xl bg-brand-dark/10 text-brand-dark flex items-center justify-center group-hover:bg-brand-dark group-hover:text-black transition-all">
                                 {industry.icon}
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-3">{industry.title}</h3>
                             <p className="text-gray-400 mb-6 leading-relaxed">
                                 {industry.description}
                             </p>
-                            <div className="mt-auto flex items-center text-yellow-400 font-bold group-hover:translate-x-1 transition-transform">
+                            <div className="mt-auto flex items-center text-brand-dark font-bold group-hover:translate-x-1 transition-transform">
                                 Read More <ArrowRight className="ml-2 w-4 h-4" />
                             </div>
                         </Link>

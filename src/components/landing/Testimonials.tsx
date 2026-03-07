@@ -26,7 +26,7 @@ export function Testimonials() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-                        What <span className="text-yellow-400">Business Owners</span> Say
+                        What <span className="text-brand-dark">Business Owners</span> Say
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Don't just take our word for it. Join hundreds of happy business owners.
@@ -35,18 +35,18 @@ export function Testimonials() {
 
                 <div className="grid md:grid-cols-3 gap-8">
                     {reviews.map((review, index) => (
-                        <div key={index} className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-yellow-400/30 transition-all">
+                        <div key={index} className="p-8 rounded-3xl bg-white/5 border border-white/10 hover:border-brand-dark/30 transition-all">
                             <div className="flex gap-1 mb-6">
                                 {[...Array(5)].map((_, i) => (
-                                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                                    <Star key={i} className="w-4 h-4 fill-brand-dark text-brand-dark" />
                                 ))}
                             </div>
                             <p className="text-white text-lg mb-8 leading-relaxed italic">
                                 "{review.content}"
                             </p>
                             <div className="flex items-center gap-4">
-                                <div className="w-12 h-12 bg-yellow-400/20 rounded-full flex items-center justify-center">
-                                    <MessageSquare className="w-6 h-6 text-yellow-400" />
+                                <div className="w-12 h-12 bg-brand-dark/20 rounded-full flex items-center justify-center">
+                                    <MessageSquare className="w-6 h-6 text-brand-dark" />
                                 </div>
                                 <div>
                                     <h4 className="text-white font-bold">{review.name}</h4>

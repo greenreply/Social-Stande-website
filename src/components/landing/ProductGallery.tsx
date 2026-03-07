@@ -2,7 +2,7 @@
 
 export function ProductGallery() {
     const images = [
-        { title: "NFC Tap Example", color: "from-yellow-400/10 to-transparent" },
+        { title: "NFC Tap Example", color: "from-brand-dark/10 to-transparent" },
         { title: "QR Scan Example", color: "from-blue-500/10 to-transparent" },
         { title: "Restaurant Placing", color: "from-purple-500/10 to-transparent" },
         { title: "Salon Counter", color: "from-emerald-500/10 to-transparent" },
@@ -13,7 +13,7 @@ export function ProductGallery() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-                        See It In <span className="text-yellow-400">Action</span>
+                        See It In <span className="text-brand-dark">Action</span>
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Our premium acrylic standees look great on any counter and are built to last.

@@ -28,7 +28,7 @@ export function FAQSection() {
             <div className="container mx-auto px-6 max-w-3xl">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-                        Frequently Asked <span className="text-yellow-400">Questions</span>
+                        Frequently Asked <span className="text-brand-dark">Questions</span>
                     </h2>
                     <p className="text-gray-400 text-lg">
                         Everything you need to know about Social Standee.
@@ -55,7 +55,7 @@ function FAQItem({ question, answer }: { question: string, answer: string }) {
                 className="w-full p-6 text-left flex items-center justify-between bg-zinc-950 hover:bg-zinc-900 transition-colors"
             >
                 <span className="text-lg font-bold text-white">{question}</span>
-                {isOpen ? <Minus className="text-yellow-400" /> : <Plus className="text-yellow-400" />}
+                {isOpen ? <Minus className="text-brand-dark" /> : <Plus className="text-brand-dark" />}
             </button>
             <div
                 className={`transition-all duration-300 ease-in-out overflow-hidden ${isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"

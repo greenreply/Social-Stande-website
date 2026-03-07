@@ -53,7 +53,7 @@ export function PricingSection() {
             <div className="container mx-auto px-6">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
-                        Simple, <span className="text-yellow-400">Transparent</span> Pricing
+                        Simple, <span className="text-brand-dark">Transparent</span> Pricing
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                         Choose the perfect plan for your business growth. No hidden fees.
@@ -64,11 +64,11 @@ export function PricingSection() {
                     {plans.map((plan, index) => (
                         <div
                             key={index}
-                            className={`p-8 rounded-[2.5rem] bg-zinc-950 border transition-all flex flex-col ${plan.popular ? "border-yellow-400 scale-105 shadow-[0_0_50px_rgba(250,217,87,0.1)] relative" : "border-white/10"
+                            className={`p-8 rounded-[2.5rem] bg-zinc-950 border transition-all flex flex-col ${plan.popular ? "border-brand-dark scale-105 shadow-[0_0_50px_rgba(250,217,87,0.1)] relative" : "border-white/10"
                                 }`}
                         >
                             {plan.popular && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-yellow-400 text-black text-xs font-black uppercase tracking-widest px-4 py-1 rounded-full">
+                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-dark text-black text-xs font-black uppercase tracking-widest px-4 py-1 rounded-full">
                                     Most Popular
                                 </div>
                             )}
@@ -84,8 +84,8 @@ export function PricingSection() {
                             <div className="space-y-4 mb-10 flex-grow">
                                 {plan.features.map((feature, i) => (
                                     <div key={i} className="flex items-start gap-3">
-                                        <div className="mt-1 w-5 h-5 rounded-full bg-yellow-400/10 flex items-center justify-center flex-shrink-0">
-                                            <Check className="w-3 h-3 text-yellow-400" strokeWidth={3} />
+                                        <div className="mt-1 w-5 h-5 rounded-full bg-brand-dark/10 flex items-center justify-center flex-shrink-0">
+                                            <Check className="w-3 h-3 text-brand-dark" strokeWidth={3} />
                                         </div>
                                         <span className="text-gray-400 text-sm leading-tight">{feature}</span>
                                     </div>
@@ -94,7 +94,7 @@ export function PricingSection() {
 
                             <Link
                                 href="https://wa.me/918140961702"
-                                className={`w-full py-4 rounded-2xl font-bold transition-all flex items-center justify-center group ${plan.popular ? "bg-yellow-400 hover:bg-yellow-500 text-black" : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
+                                className={`w-full py-4 rounded-2xl font-bold transition-all flex items-center justify-center group ${plan.popular ? "bg-brand-dark hover:bg-brand-dark/90 text-black" : "bg-white/5 hover:bg-white/10 text-white border border-white/10"
                                     }`}
                             >
                                 {plan.cta}
