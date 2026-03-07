@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function HeroSection() {
     return (
-        <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden bg-black">
+        <section className="relative pt-24 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-black">
             {/* Background decoration */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[600px] bg-gradient-to-b from-brand-dark/10 to-transparent blur-3xl opacity-50" />
             <div
@@ -41,7 +41,7 @@ export function HeroSection() {
                             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
                         </Link>
                         <Link
-                            href="#how-it-works"
+                            href="/how-it-works"
                             className="w-full sm:w-auto px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all backdrop-blur-sm"
                         >
                             See How It Works

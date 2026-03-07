@@ -35,7 +35,7 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section className="py-24 bg-black">
+    <section className="py-16 bg-black">
       <div className="container mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">

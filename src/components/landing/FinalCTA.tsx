@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function FinalCTA() {
     return (
-        <section className="py-24 bg-black relative overflow-hidden">
+        <section className="py-16 bg-black relative overflow-hidden">
             <div className="absolute inset-0 bg-brand-dark/5 blur-[120px] rounded-full translate-y-1/2 scale-150" />
 
             <div className="container mx-auto px-6 relative z-10">

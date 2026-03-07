@@ -25,7 +25,7 @@ export function SolutionSection() {
     ];
 
     return (
-        <section id="how-it-works" className="py-24 bg-zinc-950 relative overflow-hidden">
+        <section id="how-it-works" className="py-16 bg-zinc-950 relative overflow-hidden">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[800px] bg-brand-dark/5 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10">
