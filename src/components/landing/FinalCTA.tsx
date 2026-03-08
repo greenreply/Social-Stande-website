@@ -14,9 +14,7 @@ export function FinalCTA() {
                         Start Getting More <br />
                         <span className="text-brand-dark text-glow">Google Reviews Today</span>
                     </h2>
-                    <p className="text-brand-dark/10 text-lg md:text-xl mb-12 max-w-2xl mx-auto">
-                        Join 500+ businesses who are transforming their online reputation with 1 tap.
-                    </p>
+                    <p className="text-brand-dark/10 text-lg md:text-xl mb-12 max-w-2xl mx-auto">Join 500+ businesses who are transforming their online reputation with 1 tap.</p>
 
                     <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
                         <Link

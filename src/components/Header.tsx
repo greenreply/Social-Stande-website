@@ -4,7 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState, useRef } from "react";
 import { Menu, X } from "lucide-react";
-import { Button } from "./Button";
 
 export function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -50,7 +49,7 @@ export function Header() {
             <header
                 className={`fixed top-0 left-0 w-full z-[10000] transition-all duration-300 transform ${visible ? "translate-y-0" : "-translate-y-full"
                     } ${scrolled ? "backdrop-blur-md border-b border-white/10 py-2 md:py-4" : "py-3 md:py-6"}`}
-                style={{ backgroundColor: '#000000' }}
+
             >
                 {/* Subtle Background Grid */}
                 <div className="absolute inset-0 z-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:20px_20px] pointer-events-none" />

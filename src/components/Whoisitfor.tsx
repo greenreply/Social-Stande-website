@@ -12,10 +12,10 @@ const PROFILES = [
     tags: ["Dine-in", "Takeaway", "Cloud Kitchen"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
-        <path d="M12 8v10c0 4.418 3.582 8 8 8s8-3.582 8-8V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M20 8v10M16 8v10M24 8v10" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M20 26v14M14 40h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M32 8c0 0 4 4 4 12s-4 12-4 12v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M12 8v10c0 4.418 3.582 8 8 8s8-3.582 8-8V8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M20 8v10M16 8v10M24 8v10" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M20 26v14M14 40h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M32 8c0 0 4 4 4 12s-4 12-4 12v8" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
     ),
   },
@@ -28,10 +28,10 @@ const PROFILES = [
     tags: ["Clothing", "Electronics", "General Store"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
-        <path d="M8 20V38a2 2 0 002 2h28a2 2 0 002-2V20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M6 12h36l-3 8H9l-3-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M20 40V28h8v12" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M14 20v3a3 3 0 01-6 0v-3M26 20v3a3 3 0 01-6 0v-3M38 20v3a3 3 0 01-6 0v-3" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M8 20V38a2 2 0 002 2h28a2 2 0 002-2V20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M6 12h36l-3 8H9l-3-8z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M20 40V28h8v12" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M14 20v3a3 3 0 01-6 0v-3M26 20v3a3 3 0 01-6 0v-3M38 20v3a3 3 0 01-6 0v-3" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -44,10 +44,10 @@ const PROFILES = [
     tags: ["Hair Salon", "Beauty Parlour", "Spa & Wellness"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
-        <path d="M16 8c-4 4-4 10 0 14l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M20 26l10 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M24 30l6-2 8 8-4 4-8-8 2-6" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <circle cx="18" cy="14" r="3" stroke="currentColor" strokeWidth="2"/>
+        <path d="M16 8c-4 4-4 10 0 14l4 4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M20 26l10 14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M24 30l6-2 8 8-4 4-8-8 2-6" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <circle cx="18" cy="14" r="3" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
@@ -60,9 +60,9 @@ const PROFILES = [
     tags: ["General Physician", "Dental Clinic", "Eye Care"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
-        <rect x="10" y="8" width="28" height="32" rx="3" stroke="currentColor" strokeWidth="2"/>
-        <path d="M24 18v12M18 24h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
-        <path d="M16 8V6a2 2 0 014 0v2M28 8V6a2 2 0 014 0v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <rect x="10" y="8" width="28" height="32" rx="3" stroke="currentColor" strokeWidth="2" />
+        <path d="M24 18v12M18 24h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+        <path d="M16 8V6a2 2 0 014 0v2M28 8V6a2 2 0 014 0v2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -75,10 +75,10 @@ const PROFILES = [
     tags: ["Hotel", "Homestay", "Guest House"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
-        <path d="M8 40V16l16-8 16 8v24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-        <rect x="20" y="28" width="8" height="12" rx="1" stroke="currentColor" strokeWidth="2"/>
-        <rect x="13" y="22" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2"/>
-        <rect x="29" y="22" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2"/>
+        <path d="M8 40V16l16-8 16 8v24" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        <rect x="20" y="28" width="8" height="12" rx="1" stroke="currentColor" strokeWidth="2" />
+        <rect x="13" y="22" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2" />
+        <rect x="29" y="22" width="6" height="6" rx="1" stroke="currentColor" strokeWidth="2" />
       </svg>
     ),
   },
@@ -91,9 +91,9 @@ const PROFILES = [
     tags: ["Electrician", "CA / Consultant", "Agency"],
     svg: (
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" className="w-6 h-6">
-        <path d="M30 10l8 8-18 18H12v-8L30 10z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round"/>
-        <path d="M26 14l8 8" stroke="currentColor" strokeWidth="2"/>
-        <path d="M10 40h28" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+        <path d="M30 10l8 8-18 18H12v-8L30 10z" stroke="currentColor" strokeWidth="2" strokeLinejoin="round" />
+        <path d="M26 14l8 8" stroke="currentColor" strokeWidth="2" />
+        <path d="M10 40h28" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
       </svg>
     ),
   },
@@ -151,14 +151,14 @@ export function WhoIsItFor() {
                       {profile.svg}
                     </div>
 
-                    <div>
-                      <p className="text-sm font-semibold text-white leading-snug">
+                    <span className="block">
+                      <span className="text-sm font-semibold text-white leading-snug block">
                         {profile.title}
-                      </p>
-                      <p className={`text-xs mt-0.5 transition-colors duration-200 ${isActive ? "text-brand-dark" : "text-white/30"}`}>
+                      </span>
+                      <span className={`text-xs mt-0.5 transition-colors duration-200 block ${isActive ? "text-brand-dark" : "text-white/30"}`}>
                         {profile.subtitle}
-                      </p>
-                    </div>
+                      </span>
+                    </span>
                   </button>
                 </li>
               );

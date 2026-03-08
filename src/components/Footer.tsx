@@ -35,7 +35,7 @@ export function Footer() {
                     </a>
                 </div>
 
-                <p className="text-[10px] font-black uppercase tracking-[0.4em] text-black/50">
+                <p className="text-[10px] font-black uppercase tracking-[0.4em] text-black/50" suppressHydrationWarning>
                     © {new Date().getFullYear()} | Social Standee
                 </p>
             </div>
